@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Puspita Pramanik – 3rd Year B.Tech CSE Student at IEM Newtown. Passionate about Full-Stack Development, DSA, and building real-world applications." />
+  <meta name="keywords" content="Puspita Pramanik, Portfolio, CSE, B.Tech, IEM Newtown, Full Stack Developer, DSA" />
+  <meta property="og:title" content="Puspita Pramanik | Developer Portfolio" />
+  <meta property="og:description" content="3rd Year B.Tech CSE Student passionate about building elegant, performant applications." />
+  <title>Puspita Pramanik | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        Puspita
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link" onclick="closeMenu()">About</a></li>
+        <li><a href="#projects" class="nav-link" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#skills" class="nav-link" onclick="closeMenu()">Skills</a></li>
+        <li><a href="#education" class="nav-link" onclick="closeMenu()">Education</a></li>
+        <li><a href="#experience" class="nav-link" onclick="closeMenu()">Experience</a></li>
+        <li><a href="#certificates" class="nav-link" onclick="closeMenu()">Certificates</a></li>
+        <li><a href="#contact" class="nav-link" onclick="closeMenu()">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="toggle-icon" id="toggleIcon">☀️</span>
+          </button>
+        </li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-text">
+        <div class="hero-greeting">
+          <span class="wave">👋</span>
+          <span>Hello, World!</span>
+        </div>
+        <h1 class="hero-name">
+          I'm <span class="gradient-text">Puspita Pramanik</span>
+        </h1>
+        <h2 class="hero-role">
+          <span class="typed-text" id="typedText"></span>
+          <span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          A passionate 3rd Year B.Tech CSE student at IEM Newtown, crafting elegant solutions 
+          from low-level logic to full-stack applications — one commit at a time. 🚀
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Projects</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="Puspita_Pramanik_Resume.jpeg" download="Puspita_Pramanik_Resume.jpeg" class="btn btn-outline" id="resumeBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            <span>Download Resume</span>
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Puspita2411" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub" id="heroGithub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/puspita-pramanik-9a37b8332" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn" id="heroLinkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" class="social-icon" aria-label="Twitter/X" id="heroTwitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring avatar-ring-2"></div>
+          <img src="avatar-new.jpg" alt="Puspita Pramanik - Cartoon Avatar" class="avatar-img" id="avatarImg" />
+          <div class="avatar-badge">
+            <span>🎓</span>
+            <span>3rd Year CSE</span>
+          </div>
+        </div>
+        <div class="floating-cards">
+          <div class="float-card float-card-1">
+            <span>💻</span>
+            <span>Full Stack</span>
+          </div>
+          <div class="float-card float-card-2">
+            <span>🧠</span>
+            <span>DSA Pro</span>
+          </div>
+          <div class="float-card float-card-3">
+            <span>⚡</span>
+            <span>IEM Newtown</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Get To Know Me</p>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-content">
+          <div class="about-card glass-card">
+            <h3 class="about-card-title">
+              <span class="card-icon">🎯</span>
+              Core Identity
+            </h3>
+            <p>
+              I'm a <strong>3rd Year B.Tech Computer Science Engineering</strong> student at 
+              <strong>Institute of Engineering and Management (IEM), Newtown</strong>. 
+              My passion lies at the intersection of systems thinking and web development — 
+              I love understanding how things work under the hood while building polished 
+              applications on top.
+            </p>
+            <p>
+              My technical interests span <strong>Full-Stack Development</strong>, 
+              <strong>Low-Level Programming</strong>, <strong>Systems</strong>, and 
+              <strong>AI/ML</strong> — always driven by curiosity and a desire to build 
+              things that matter.
+            </p>
+          </div>
+
+          <div class="about-card glass-card">
+            <h3 class="about-card-title">
+              <span class="card-icon">🏗️</span>
+              How I Build
+            </h3>
+            <p>
+              I approach every problem from first principles. I believe in understanding 
+              the <strong>fundamentals</strong> before reaching for frameworks. My process 
+              involves building CLI logic and low-level data structures first, then layering 
+              abstractions to create fully realized, integrated applications that are both 
+              robust and elegant.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="about-card glass-card">
+            <h3 class="about-card-title">
+              <span class="card-icon">📚</span>
+              Academic Strengths
+            </h3>
+            <div class="strength-list">
+              <div class="strength-item">
+                <span class="strength-icon">🔷</span>
+                <div>
+                  <strong>Data Structures & Algorithms (DSA)</strong>
+                  <p>Arrays, Trees, Graphs, Dynamic Programming</p>
+                </div>
+              </div>
+              <div class="strength-item">
+                <span class="strength-icon">🔷</span>
+                <div>
+                  <strong>Computer Organization & Architecture (COA)</strong>
+                  <p>Memory hierarchy, CPU design, instruction sets</p>
+                </div>
+              </div>
+              <div class="strength-item">
+                <span class="strength-icon">🔷</span>
+                <div>
+                  <strong>Digital Logic</strong>
+                  <p>Boolean algebra, combinational & sequential circuits</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card glass-card">
+              <span class="stat-number gradient-text">10+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-number gradient-text">3rd</span>
+              <span class="stat-label">Year Student</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-number gradient-text">∞</span>
+              <span class="stat-label">Curiosity</span>
+            </div>
+          </div>
+
+          <div class="about-card glass-card hobbies-card">
+            <h3 class="about-card-title">
+              <span class="card-icon">✨</span>
+              Beyond the Code
+            </h3>
+            <div class="hobby-chips">
+              <span class="hobby-chip">🎨 Drawing</span>
+              <span class="hobby-chip">🎮 Gaming</span>
+              <span class="hobby-chip">⚔️ Hackathons</span>
+              <span class="hobby-chip">📖 Tech Blogs</span>
+              <span class="hobby-chip">🎵 Music</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROJECTS ======================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What I've Built</p>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all" id="filterAll">All</button>
+        <button class="filter-btn" data-filter="web" id="filterWeb">Web</button>
+        <button class="filter-btn" data-filter="systems" id="filterSystems">Systems</button>
+        <button class="filter-btn" data-filter="tools" id="filterTools">Tools</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project-card glass-card" data-category="web" id="project1">
+          <div class="project-img-wrap">
+            <img src="projects/shareplate.png" alt="SharePlate — Food Rescue Platform" class="project-img" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <span class="project-category-tag">PWA · Web App</span>
+            <h3 class="project-title">SharePlate — Food Rescue Platform</h3>
+            <p class="project-desc">A real-time PWA connecting restaurants with surplus food to nearby NGOs, reducing waste and fighting hunger through geolocation-based matching.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Firebase</span>
+              <span class="tech-badge">TensorFlow.js</span>
+              <span class="tech-badge">PWA</span>
+              <span class="tech-badge">Google Maps API</span>
+            </div>
+            <div class="project-challenges">
+              <p class="challenges-title">Challenges Solved</p>
+              <ul class="challenges-list">
+                <li>Bridges the gap between surplus supply and local demand — restaurants instantly list fresh leftover food instead of discarding it.</li>
+                <li>Leverages real-time, geolocation-based matching to instantly notify nearby verified NGOs to claim and distribute meals to vulnerable communities.</li>
+                <li>Replaces chaotic coordination with structured logistics — strict pickup windows, digital signatures, live tracking, and transparent impact metric tracking.</li>
+              </ul>
+            </div>
+            <div class="project-stat-badge">
+              <span>🍽️ 50K+ Meals Served</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card" data-category="web" id="project2">
+          <div class="project-img-wrap">
+            <img src="projects/Dr. Appointment.png" alt="Dr. Appointment System" class="project-img" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <span class="project-category-tag">Full-Stack · Web App</span>
+            <h3 class="project-title">Dr. Appointment System</h3>
+            <p class="project-desc">A comprehensive patient-doctor booking platform facilitating real-time scheduling, secure dashboards, and automated notifications.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">React Router</span>
+              <span class="tech-badge">Vite</span>
+              <span class="tech-badge">Axios</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Express.js</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">JWT</span>
+              <span class="tech-badge">bcryptjs</span>
+              <span class="tech-badge">Nodemailer</span>
+              <span class="tech-badge">React Hot Toast</span>
+            </div>
+            <div class="project-challenges">
+              <p class="challenges-title">Challenges Solved</p>
+              <ul class="challenges-list">
+                <li>Replaces manual scheduling with real-time doctor availability and automated, conflict-free booking for patients.</li>
+                <li>Secures patient and doctor portals with encrypted authentication (JWT/bcrypt) to safely manage appointment dashboards.</li>
+                <li>Automatically keeps both parties informed through instant UI notifications and automated email confirmations (Nodemailer).</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card" data-category="web" id="project3">
+          <div class="project-img-wrap">
+            <img src="projects/My Portfolio.png" alt="Interactive Developer Portfolio" class="project-img" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <span class="project-category-tag">Frontend · Portfolio</span>
+            <h3 class="project-title">Interactive Developer Portfolio</h3>
+            <p class="project-desc">A premium, highly interactive portfolio featuring glassmorphic design, scroll animations, dynamic theme toggling, and serverless form delivery.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Intersection Observer</span>
+              <span class="tech-badge">Web3Forms</span>
+              <span class="tech-badge">LocalStorage</span>
+            </div>
+            <div class="project-challenges">
+              <p class="challenges-title">Challenges Solved</p>
+              <ul class="challenges-list">
+                <li>Consolidates developer identity, academic credentials, projects, and certificates into a single, cohesive hub for prospective recruiters.</li>
+                <li>Replaces static resumes with an interactive experience featuring dynamic theme selection, scroll-triggered animations, and a real-time particle background.</li>
+                <li>Eliminates complex backend server setup by leveraging serverless form handlers to route client messages directly to Gmail, ensuring zero missed inquiries.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card" data-category="web" id="project4">
+          <div class="project-img-wrap">
+            <img src="projects/MedicalStore.png" alt="Medical Store Management" class="project-img" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <span class="project-category-tag">Web App</span>
+            <h3 class="project-title">Medical Store Management</h3>
+            <p class="project-desc">A dynamic pharmacy inventory system that optimizes workflow through real-time stock monitoring, low-stock notifications, and transactional insights.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">Tailwind CSS</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">LocalStorage</span>
+            </div>
+            <div class="project-challenges">
+              <p class="challenges-title">Challenges Solved</p>
+              <ul class="challenges-list">
+                <li>Eliminates error-prone paperwork by providing digital, real-time tracking of medicine quantities, categories, and batch data.</li>
+                <li>Minimizes business disruptions and stockouts through automated low-stock warnings linked to custom reorder levels.</li>
+                <li>Removes revenue tracking confusion by maintaining instant transaction histories and automatically generating performance reports.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card" data-category="web" id="project5">
+          <div class="project-img-wrap">
+            <img src="projects/spotify.png" alt="Spotify Clone" class="project-img" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <span class="project-category-tag">Web App</span>
+            <h3 class="project-title">Spotify Clone</h3>
+            <p class="project-desc">A highly responsive audio player recreating Spotify's interface, built purely with native APIs for lightweight execution and seamless playback synchronization.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Font Awesome</span>
+              <span class="tech-badge">Google Fonts</span>
+            </div>
+            <div class="project-challenges">
+              <p class="challenges-title">Challenges Solved</p>
+              <ul class="challenges-list">
+                <li>Replaces heavy client framework dependencies by using pure native web APIs to deliver a completely responsive web audio platform entirely execution-efficient across all devices.</li>
+                <li>Fixes user account registration validation oversights by processing real-time custom validation metrics directly on the client side before saving credentials locally.</li>
+                <li>Streamlines song navigation systems by implementing instant local dynamic array searches and synchronizing individual track item nodes automatically with a sticky global playback dashboard.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="projects-more">
+        <a href="https://github.com/Puspita2411" target="_blank" rel="noopener" class="btn btn-outline" id="viewAllProjects">
+          View All on GitHub
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SKILLS ======================== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What I Work With</p>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-category glass-card" id="skillLanguages">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🔤</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">C</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">C++</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-level">Beginner</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 55%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" id="skillFrontend">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🎨</span>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">HTML/CSS</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">React.js</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">Tailwind CSS</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">Bootstrap</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 65%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" id="skillBackend">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⚙️</span>
+            <h3>Backend / Databases</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 72%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">Express.js</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 68%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">MongoDB</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 65%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">SQL</span>
+                <span class="skill-level">Beginner</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 55%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" id="skillTools">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠️</span>
+            <h3>Developer Tools</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">Git & GitHub</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">VS Code</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 92%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">Linux / Terminal</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <span class="skill-name">Postman</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 68%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CS Fundamentals badges -->
+      <div class="cs-fundamentals">
+        <h3 class="fundamentals-title">CS Fundamentals</h3>
+        <div class="fundamentals-grid">
+          <div class="fundamental-badge glass-card">
+            <span class="fundamental-icon">🌲</span>
+            <span>Data Structures</span>
+          </div>
+          <div class="fundamental-badge glass-card">
+            <span class="fundamental-icon">⚡</span>
+            <span>Algorithms</span>
+          </div>
+          <div class="fundamental-badge glass-card">
+            <span class="fundamental-icon">🖥️</span>
+            <span>COA</span>
+          </div>
+          <div class="fundamental-badge glass-card">
+            <span class="fundamental-icon">🔌</span>
+            <span>Digital Logic</span>
+          </div>
+          <div class="fundamental-badge glass-card">
+            <span class="fundamental-icon">🌐</span>
+            <span>Networking</span>
+          </div>
+          <div class="fundamental-badge glass-card">
+            <span class="fundamental-icon">🔐</span>
+            <span>OS Concepts</span>
+          </div>
+          <div class="fundamental-badge glass-card">
+            <span class="fundamental-icon">🗄️</span>
+            <span>DBMS</span>
+          </div>
+          <div class="fundamental-badge glass-card">
+            <span class="fundamental-icon">🧮</span>
+            <span>Discrete Math</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== EXPERIENCE & ACHIEVEMENTS ======================== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">My Journey</p>
+        <h2 class="section-title">Experience &amp; <span class="gradient-text">Achievements</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="exp-panels">
+
+        <!-- ===== INTERNSHIP PANEL ===== -->
+        <div class="exp-panel glass-card" id="internshipPanel">
+          <div class="exp-panel-header">
+            <div class="exp-panel-icon">💼</div>
+            <div>
+              <h3 class="exp-panel-title">Internships</h3>
+              <p class="exp-panel-subtitle">Professional Experience</p>
+            </div>
+            <span class="exp-count-badge">2</span>
+          </div>
+
+          <div class="exp-entries">
+
+            <!-- Entry 1: Kshitiksha Foundation -->
+            <div class="exp-entry" id="intern1">
+              <div class="exp-entry-header">
+                <div class="exp-entry-logo">🌱</div>
+                <div class="exp-entry-meta">
+                  <h4 class="exp-entry-role">Content Creator &amp; Marketing Team Member</h4>
+                  <p class="exp-entry-org">Kshitiksha Foundation</p>
+                  <span class="exp-entry-date">📅 May 12, 2025 — June 12, 2025 &nbsp;·&nbsp; 30 Days</span>
+                </div>
+                <div class="exp-grade-badge">Grade: S</div>
+              </div>
+              <p class="exp-entry-desc">
+                Served as a Content Creator and Marketing Team Member at <strong>Kshitiksha Foundation</strong> — 
+                a Section 8 non-profit registered with the <strong>Ministry of Corporate Affairs, Government of India</strong>, 
+                and an <strong>ISO 9001:2015-certified &amp; MSME-registered</strong> organization. 
+                Developed compelling content and executed strategic marketing initiatives to support their 
+                humanitarian mission spanning Humanity, Wildlife, Education Empowerment, and Women Safety. 
+                Graded <strong>S (Superior)</strong> for outstanding performance and dedication.
+              </p>
+              <div class="exp-tags">
+                <span class="tech-badge">Content Writing</span>
+                <span class="tech-badge">Digital Marketing</span>
+                <span class="tech-badge">NGO</span>
+                <span class="tech-badge">ISO 9001:2015</span>
+              </div>
+              <!-- Certificate Downloads: Kshitiksha Foundation -->
+              <div class="cert-downloads">
+                <p class="cert-dl-label">📄 Certificates</p>
+                <div class="cert-dl-buttons">
+                  <a href="certificates/kshitiksha-appreciation.jpg" download class="cert-dl-btn" id="dlKshit1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Certificate of Appreciation
+                  </a>
+                  <a href="certificates/kshitiksha-recommendation.jpg" download class="cert-dl-btn" id="dlKshit2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Letter of Recommendation
+                  </a>
+                  <a href="certificates/kshitiksha-experience.jpg" download class="cert-dl-btn" id="dlKshit3">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Certificate of Experience
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-divider"></div>
+
+            <!-- Entry 2: Pinnacle Labs -->
+            <div class="exp-entry" id="intern2">
+              <div class="exp-entry-header">
+                <div class="exp-entry-logo">🚀</div>
+                <div class="exp-entry-meta">
+                  <h4 class="exp-entry-role">C Programming Virtual Intern</h4>
+                  <p class="exp-entry-org">Pinnacle Labs</p>
+                  <span class="exp-entry-date">📅 Dec 9, 2025 — Jan 8, 2026 &nbsp;·&nbsp; 4 Weeks</span>
+                </div>
+                <div class="exp-grade-badge exp-grade-green">Completed</div>
+              </div>
+              <p class="exp-entry-desc">
+                Successfully completed a <strong>4-week virtual internship in C Programming</strong> at <strong>Pinnacle Labs</strong> 
+                (Ministry of Corporate Affairs registered, ISO 9001:2015 certified, MSME registered). 
+                Worked on <strong>three hands-on C programming projects</strong>, significantly strengthening 
+                problem-solving skills, logical thinking, and core programming concepts. 
+                The internship provided valuable practical exposure and contributed meaningfully to technical growth.
+              </p>
+              <div class="exp-tags">
+                <span class="tech-badge">C Programming</span>
+                <span class="tech-badge">Problem Solving</span>
+                <span class="tech-badge">Virtual Internship</span>
+                <span class="tech-badge">Pinnacle Labs</span>
+              </div>
+              <!-- Certificate Downloads: Pinnacle Labs -->
+              <div class="cert-downloads">
+                <p class="cert-dl-label">📄 Certificate</p>
+                <div class="cert-dl-buttons">
+                  <a href="certificates/pinnacle-internship.jpg" download class="cert-dl-btn" id="dlPinnacle1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Certificate of Internship
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ===== HACKATHON PANEL ===== -->
+        <div class="exp-panel glass-card" id="hackathonPanel">
+          <div class="exp-panel-header">
+            <div class="exp-panel-icon">🏆</div>
+            <div>
+              <h3 class="exp-panel-title">Hackathons</h3>
+              <p class="exp-panel-subtitle">Competitive Achievements</p>
+            </div>
+            <span class="exp-count-badge exp-count-purple">4 Events</span>
+          </div>
+
+          <div class="exp-entries">
+
+            <!-- Hackathon 1: Cosmohack1 -->
+            <div class="exp-entry" id="hack1">
+              <div class="exp-entry-header">
+                <div class="exp-entry-logo">🌌</div>
+                <div class="exp-entry-meta">
+                  <h4 class="exp-entry-role">Cosmohack1</h4>
+                  <p class="exp-entry-org">Sourcify Community &nbsp;·&nbsp; Powered by Unstop</p>
+                  <span class="exp-entry-date">📅 UEM, Kolkata</span>
+                </div>
+                <div class="exp-grade-badge exp-count-purple">Participated</div>
+              </div>
+              <p class="exp-entry-desc">
+                Participated in <strong>Cosmohack1</strong>, a competitive hackathon organised by the
+                <strong>Sourcify Community</strong> via the <strong>Unstop</strong> platform, representing
+                <strong>University of Engineering and Management (UEM), Kolkata</strong>. The event challenged
+                participants to build innovative solutions under real-world constraints, fostering creativity,
+                collaboration, and rapid prototyping skills.
+              </p>
+              <div class="exp-tags">
+                <span class="tech-badge">Hackathon</span>
+                <span class="tech-badge">Sourcify</span>
+                <span class="tech-badge">Unstop</span>
+                <span class="tech-badge">UEM Kolkata</span>
+              </div>
+              <div class="cert-downloads">
+                <p class="cert-dl-label">📄 Certificate</p>
+                <div class="cert-dl-buttons">
+                  <a href="certificates/hackathon-cosmohack1.jpg" download class="cert-dl-btn" id="dlCosmohack">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Certificate of Participation
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-divider"></div>
+
+            <!-- Hackathon 2: IMPETUS 2026 -->
+            <div class="exp-entry" id="hack2">
+              <div class="exp-entry-header">
+                <div class="exp-entry-logo">⚡</div>
+                <div class="exp-entry-meta">
+                  <h4 class="exp-entry-role">IMPETUS Hackathon 2026</h4>
+                  <p class="exp-entry-org">GDG On Campus IEM &nbsp;·&nbsp; Team: Byte Force</p>
+                  <span class="exp-entry-date">📅 Dec 11, 2025 — Jan 12, 2026</span>
+                </div>
+                <div class="exp-grade-badge exp-count-purple">Participated</div>
+              </div>
+              <p class="exp-entry-desc">
+                Successfully participated in <strong>IMPETUS Hackathon 2026</strong>, organised by
+                <strong>Google Developer Groups (GDG) On Campus, IEM</strong>, as part of Team <strong>"Byte Force"</strong>.
+                The hackathon spanned over a month, challenging teams to demonstrate enthusiasm, innovation, and
+                active involvement throughout the event. Appreciated by the organising committee for outstanding
+                contribution and collaborative spirit.
+              </p>
+              <div class="exp-tags">
+                <span class="tech-badge">GDG On Campus</span>
+                <span class="tech-badge">Team Byte Force</span>
+                <span class="tech-badge">IEM</span>
+                <span class="tech-badge">Innovation</span>
+              </div>
+              <div class="cert-downloads">
+                <p class="cert-dl-label">📄 Certificate</p>
+                <div class="cert-dl-buttons">
+                  <a href="certificates/hackathon-impetus.jpg" download class="cert-dl-btn" id="dlImpetus">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Certificate of Participation
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-divider"></div>
+
+            <!-- Hackathon 3: CODE-ON -->
+            <div class="exp-entry" id="hack3">
+              <div class="exp-entry-header">
+                <div class="exp-entry-logo">💻</div>
+                <div class="exp-entry-meta">
+                  <h4 class="exp-entry-role">CODE-ON Competition</h4>
+                  <p class="exp-entry-org">IET-IEM On Campus &nbsp;·&nbsp; IET Kolkata Local Network</p>
+                  <span class="exp-entry-date">📅 March 20 — 22, 2026</span>
+                </div>
+                <div class="exp-grade-badge exp-count-purple">Participated</div>
+              </div>
+              <p class="exp-entry-desc">
+                Participated in the <strong>CODE-ON</strong> coding competition, organised by
+                <strong>IET-IEM On Campus</strong> in association with the
+                <strong>IET YPS Kolkata Local Network</strong> and <strong>Skills Strike</strong>.
+                The 3-day intensive event tested participants on algorithmic thinking, problem-solving under
+                pressure, and competitive programming — sharpening core DSA and coding proficiency in a
+                structured competitive environment.
+              </p>
+              <div class="exp-tags">
+                <span class="tech-badge">Competitive Programming</span>
+                <span class="tech-badge">IET-IEM</span>
+                <span class="tech-badge">DSA</span>
+                <span class="tech-badge">Skills Strike</span>
+              </div>
+              <div class="cert-downloads">
+                <p class="cert-dl-label">📄 Certificate</p>
+                <div class="cert-dl-buttons">
+                  <a href="certificates/hackathon-codeon.jpg" download class="cert-dl-btn" id="dlCodeOn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Certificate of Participation
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-divider"></div>
+
+            <!-- Hackathon 4: HackSnippet 3.0 -->
+            <div class="exp-entry" id="hack4">
+              <div class="exp-entry-header">
+                <div class="exp-entry-logo">🟢</div>
+                <div class="exp-entry-meta">
+                  <h4 class="exp-entry-role">HackSnippet 3.0</h4>
+                  <p class="exp-entry-org">0x.Day &nbsp;·&nbsp; UEM &amp; IEM Kolkata</p>
+                  <span class="exp-entry-date">📅 Feb 08, 2025 — UEM Kolkata</span>
+                </div>
+                <div class="exp-grade-badge exp-count-purple">Participated</div>
+              </div>
+              <p class="exp-entry-desc">
+                Participated in <strong>HackSnippet 3.0</strong>, a competitive hackathon jointly organized by
+                <strong>University of Engineering &amp; Management (UEM)</strong> and <strong>Institute of Engineering &amp; Management (IEM)</strong>,
+                powered by <strong>0x.Day</strong>. The event brought together developers to build innovative solutions
+                and showcase rapid prototyping skills in a tech-driven, collaborative environment.
+              </p>
+              <div class="exp-tags">
+                <span class="tech-badge">Hackathon</span>
+                <span class="tech-badge">0x.Day</span>
+                <span class="tech-badge">UEM Kolkata</span>
+                <span class="tech-badge">IEM</span>
+              </div>
+              <div class="cert-downloads">
+                <p class="cert-dl-label">📄 Certificate</p>
+                <div class="cert-dl-buttons">
+                  <a href="Hacksnipped3.0.jpeg" download class="cert-dl-btn" id="dlHackSnippet">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Certificate of Participation
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- end exp-panels -->
+    </div>
+  </section>
+
+  <!-- ======================== EDUCATION ======================== -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Academic Background</p>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="edu-timeline">
+
+        <!-- Education Card 1: B.Tech -->
+        <div class="edu-card glass-card" id="edu1">
+          <div class="edu-icon-col">
+            <div class="edu-icon-wrap">
+              <span class="edu-icon">🎓</span>
+            </div>
+            <div class="edu-connector"></div>
+          </div>
+          <div class="edu-body">
+            <div class="edu-meta">
+              <span class="edu-year">2024 — 2028</span>
+              <span class="edu-badge">Pursuing</span>
+            </div>
+            <h3 class="edu-degree">B.Tech — Computer Science &amp; Engineering</h3>
+            <p class="edu-institute">🏛️ Institute of Engineering and Management (IEM), Newtown</p>
+            <p class="edu-desc">
+              I am currently a 3rd Year B.Tech CSE student at IEM Newtown, diving deep into the world of 
+              Computer Science through a rigorous and industry-aligned curriculum. My focus spans 
+              <strong>Data Structures &amp; Algorithms</strong>, <strong>Full-Stack Web Development</strong>, 
+              and <strong>Computer Architecture</strong>.
+            </p>
+            <div class="edu-tags">
+              <span class="tech-badge">DSA</span>
+              <span class="tech-badge">Full Stack</span>
+              <span class="tech-badge">COA</span>
+              <span class="tech-badge">DBMS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Card 2: Higher Secondary -->
+        <div class="edu-card glass-card" id="edu2">
+          <div class="edu-icon-col">
+            <div class="edu-icon-wrap">
+              <span class="edu-icon">📚</span>
+            </div>
+            <div class="edu-connector"></div>
+          </div>
+          <div class="edu-body">
+            <div class="edu-meta">
+              <span class="edu-year">2022 — 2024</span>
+              <span class="edu-badge edu-badge-purple">Completed</span>
+            </div>
+            <h3 class="edu-degree">Higher Secondary (Class XII)</h3>
+            <p class="edu-institute">🏫 Rahara Bhabanath Institution For Girls</p>
+            <p class="edu-desc">
+              Completed my Higher Secondary education with a strong foundation in Science, studying core subjects 
+              including <strong>Physics</strong>, <strong>Chemistry</strong>, <strong>Mathematics</strong>, and 
+              <strong>Biology</strong> — building strong analytical and problem-solving skills that now power 
+              my approach to engineering and technology.
+            </p>
+            <div class="edu-tags">
+              <span class="tech-badge">Physics</span>
+              <span class="tech-badge">Chemistry</span>
+              <span class="tech-badge">Mathematics</span>
+              <span class="tech-badge">Biology</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Card 3: Secondary -->
+        <div class="edu-card glass-card" id="edu3">
+          <div class="edu-icon-col">
+            <div class="edu-icon-wrap">
+              <span class="edu-icon">🏅</span>
+            </div>
+          </div>
+          <div class="edu-body">
+            <div class="edu-meta">
+              <span class="edu-year">Up to 2022</span>
+              <span class="edu-badge edu-badge-cyan">Completed</span>
+            </div>
+            <h3 class="edu-degree">Secondary (Class X)</h3>
+            <p class="edu-institute">🏫 Rahara Bhabanath Institution For Girls</p>
+            <p class="edu-desc">
+              Completed my Secondary education at Rahara Bhabanath Institution For Girls, building a solid 
+              academic foundation across all core subjects. This phase shaped my disciplined study habits 
+              and kindled my early curiosity for science and mathematics.
+            </p>
+            <div class="edu-tags">
+              <span class="tech-badge">Science</span>
+              <span class="tech-badge">Mathematics</span>
+              <span class="tech-badge">English</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CERTIFICATES ======================== -->
+  <section class="certificates section" id="certificates">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">My Achievements</p>
+        <h2 class="section-title">Licenses &amp; <span class="gradient-text">Certificates</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="cert-grid" id="certGrid">
+
+        <!-- Certificate 1: Build Your First React Website -->
+        <div class="cert-card glass-card" id="cert1">
+          <div class="cert-ribbon cert-ribbon-purple">Completed</div>
+          <div class="cert-img-wrap">
+            <img src="certificates_courses/cert-react-website.jpeg" alt="Build Your First React Website - Coursera" class="cert-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">Coursera</span>
+            <h3 class="cert-title">Build Your First React Website</h3>
+            <p class="cert-desc">Hands-on project building a React website — authorized by Coursera Project Network.</p>
+            <div class="cert-footer">
+              <span class="cert-date">📅 Dec 2025</span>
+              <a href="https://coursera.org/verify/QLXYOH8XHGRV" target="_blank" rel="noopener" class="cert-verify-btn" id="certVerify1" aria-label="Verify Build Your First React Website">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Verify
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 2: Google AI Essentials -->
+        <div class="cert-card glass-card" id="cert2">
+          <div class="cert-ribbon cert-ribbon-cyan">Certified</div>
+          <div class="cert-img-wrap">
+            <img src="certificates_courses/cert-google-ai.jpeg" alt="Google AI Essentials" class="cert-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">Google / Coursera</span>
+            <h3 class="cert-title">Google AI Essentials</h3>
+            <p class="cert-desc">Online non-credit course authorized by Google — covering core AI concepts and tools.</p>
+            <div class="cert-footer">
+              <span class="cert-date">📅 Apr 2025</span>
+              <a href="https://coursera.org/verify/FZS6FHDUAGPA" target="_blank" rel="noopener" class="cert-verify-btn" id="certVerify2" aria-label="Verify Google AI Essentials">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Verify
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 3: Programming in Java -->
+        <div class="cert-card glass-card" id="cert3">
+          <div class="cert-ribbon cert-ribbon-elite">Elite · 96%</div>
+          <div class="cert-img-wrap">
+            <img src="certificates_courses/cert-nptel-java.jpeg" alt="Programming in Java - NPTEL Elite" class="cert-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">NPTEL / IIT Kharagpur</span>
+            <h3 class="cert-title">Programming in Java</h3>
+            <p class="cert-desc">Elite certification with 96% score (12-week course). Online Assignments: 22.97/25 · Proctored Exam: 73.5/75.</p>
+            <div class="cert-footer">
+              <span class="cert-date">📅 Jan–Apr 2026</span>
+              <a href="https://nptel.ac.in/" target="_blank" rel="noopener" class="cert-verify-btn" id="certVerify3" aria-label="Verify Programming in Java NPTEL">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                View
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 4: Ethics in Engineering Practice -->
+        <div class="cert-card glass-card" id="cert4">
+          <div class="cert-ribbon cert-ribbon-elite">Elite · 65%</div>
+          <div class="cert-img-wrap">
+            <img src="certificates_courses/cert-nptel-ethics.jpeg" alt="Ethics in Engineering Practice - NPTEL Elite" class="cert-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">NPTEL / IIT Kharagpur</span>
+            <h3 class="cert-title">Ethics in Engineering Practice</h3>
+            <p class="cert-desc">Elite certification (8-week course). Online Assignments: 18.33/25 · Proctored Exam: 46.5/75.</p>
+            <div class="cert-footer">
+              <span class="cert-date">📅 Aug–Oct 2025</span>
+              <a href="https://nptel.ac.in/" target="_blank" rel="noopener" class="cert-verify-btn" id="certVerify4" aria-label="Verify Ethics in Engineering Practice NPTEL">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                View
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 5: Harnessing HubSpot AI -->
+        <div class="cert-card glass-card" id="cert5">
+          <div class="cert-ribbon cert-ribbon-purple">Completed</div>
+          <div class="cert-img-wrap">
+            <img src="certificates_courses/cert-hubspot-ai.jpeg" alt="Harnessing HubSpot AI - Coursera" class="cert-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">Coursera Project Network</span>
+            <h3 class="cert-title">Harnessing HubSpot AI: Intelligent Marketing Success</h3>
+            <p class="cert-desc">Project certificate on leveraging AI-powered tools in HubSpot for intelligent marketing strategies.</p>
+            <div class="cert-footer">
+              <span class="cert-date">📅 Dec 2024</span>
+              <a href="https://coursera.org/verify/F8BI8KSIB88K" target="_blank" rel="noopener" class="cert-verify-btn" id="certVerify5" aria-label="Verify HubSpot AI certificate">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Verify
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 6: Ignite India – Wadhwani Foundation -->
+        <div class="cert-card glass-card" id="cert6">
+          <div class="cert-ribbon cert-ribbon-cyan">Completed</div>
+          <div class="cert-img-wrap">
+            <img src="certificates_courses/cert-wadhwani-ignite.jpeg" alt="Ignite India - Wadhwani Foundation" class="cert-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">Wadhwani Foundation</span>
+            <h3 class="cert-title">Ignite India – Entrepreneurship Program</h3>
+            <p class="cert-desc">Certificate of Program Completion for gaining hands-on entrepreneurial skills through coursework, assessments, and Binary Brains.</p>
+            <div class="cert-footer">
+              <span class="cert-date">📅 Oct 2025</span>
+              <a href="https://www.wadhwanifoundation.org/" target="_blank" rel="noopener" class="cert-verify-btn" id="certVerify6" aria-label="Verify Wadhwani Ignite India certificate">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                View
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 7: Create a Mockup in Figma -->
+        <div class="cert-card glass-card" id="cert7">
+          <div class="cert-ribbon cert-ribbon-purple">Completed</div>
+          <div class="cert-img-wrap">
+            <img src="certificates_courses/cert-figma-mockup.jpeg" alt="Create a Mockup in Figma - Coursera" class="cert-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">Coursera</span>
+            <h3 class="cert-title">Create a Mockup in Figma</h3>
+            <p class="cert-desc">Hands-on project certificate on UI/UX mockup design using Figma — authorized by Coursera.</p>
+            <div class="cert-footer">
+              <span class="cert-date">📅 Dec 2025</span>
+              <a href="https://coursera.org/verify/I356TFXW64LV" target="_blank" rel="noopener" class="cert-verify-btn" id="certVerify7" aria-label="Verify Create a Mockup in Figma">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Verify
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 8: Design Thinking for Innovators -->
+        <div class="cert-card glass-card" id="cert8">
+          <div class="cert-ribbon">Certified</div>
+          <div class="cert-img-wrap">
+            <img src="certificates_courses/cert-design-thinking.jpeg" alt="Design Thinking for Innovators - Coursera" class="cert-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">Coursera Instructor Network</span>
+            <h3 class="cert-title">Design Thinking for Innovators</h3>
+            <p class="cert-desc">Course certificate on applying design thinking methodologies to solve real-world innovation challenges.</p>
+            <div class="cert-footer">
+              <span class="cert-date">📅 Apr 2025</span>
+              <a href="https://coursera.org/verify/2XL9KIF50HYE" target="_blank" rel="noopener" class="cert-verify-btn" id="certVerify8" aria-label="Verify Design Thinking for Innovators">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Verify
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 9: Developing Soft Skills and Personality -->
+        <div class="cert-card glass-card" id="cert9">
+          <div class="cert-ribbon cert-ribbon-elite">Elite · 75%</div>
+          <div class="cert-img-wrap">
+            <img src="certificates_courses/cert-nptel-softskills.jpeg" alt="Developing Soft Skills and Personality - NPTEL Elite" class="cert-img" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">NPTEL / IIT Kanpur</span>
+            <h3 class="cert-title">Developing Soft Skills and Personality</h3>
+            <p class="cert-desc">Elite certification with 75% score (8-week course). Online Assignments: 21.33/25 · Proctored Exam: 54/75.</p>
+            <div class="cert-footer">
+              <span class="cert-date">📅 Aug–Oct 2024</span>
+              <a href="https://nptel.ac.in/" target="_blank" rel="noopener" class="cert-verify-btn" id="certVerify9" aria-label="Verify Developing Soft Skills NPTEL">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                View
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Let's Connect</p>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-tagline">
+            I'm always open to discussing new opportunities, projects, or just having a great tech conversation! 💬
+          </p>
+
+          <div class="contact-details">
+            <a href="mailto:pramanikpuspita24@gmail.com" class="contact-detail-item" id="contactEmail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">Email</span>
+                <span class="contact-detail-value">pramanikpuspita24@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/puspita-pramanik-9a37b8332" target="_blank" rel="noopener" class="contact-detail-item" id="contactLinkedin">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">LinkedIn</span>
+                <span class="contact-detail-value">linkedin.com/in/puspita-pramanik</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/Puspita2411" target="_blank" rel="noopener" class="contact-detail-item" id="contactGithub">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">GitHub</span>
+                <span class="contact-detail-value">github.com/Puspita2411</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <!-- Web3Forms: routes form submissions to your Gmail -->
+          <input type="hidden" name="access_key" value="3018e4eb-e8f5-47b6-abb0-bdb3521bd060" id="web3formsKey" />
+          <input type="hidden" name="subject" id="hiddenSubject" value="New Portfolio Message" />
+          <input type="hidden" name="from_name" value="Portfolio Contact Form" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+          <div class="form-group">
+            <label for="contactName" class="form-label">Your Name</label>
+            <input type="text" id="contactName" name="name" class="form-input" placeholder="Jane Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="contactEmailInput" class="form-label">Your Email</label>
+            <input type="email" id="contactEmailInput" name="email" class="form-input" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="contactSubject" class="form-label">Subject</label>
+            <input type="text" id="contactSubject" name="message_subject" class="form-input" placeholder="Let's collaborate!" required />
+          </div>
+          <div class="form-group">
+            <label for="contactMessage" class="form-label">Message</label>
+            <textarea id="contactMessage" name="message" class="form-input form-textarea" placeholder="Tell me about your project or opportunity..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <span>✅</span>
+            <span>Message sent! I'll get back to you soon.</span>
+          </div>
+          <div class="form-error" id="formError">
+            <span>❌</span>
+            <span>Something went wrong. Please email me directly at pramanikpuspita24@gmail.com</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="nav-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>Puspita<span class="logo-bracket">/&gt;</span>
+        </a>
+        <div class="footer-socials">
+          <a href="https://github.com/Puspita2411" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub" id="footerGithub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/puspita-pramanik-9a37b8332" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn" id="footerLinkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" class="social-icon" aria-label="Twitter/X" id="footerTwitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>Designed &amp; Built by <span class="gradient-text">Puspita Pramanik</span> ✨</p>
+        <p class="footer-copy">© 2025 Puspita Pramanik. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

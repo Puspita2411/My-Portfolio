@@ -1,0 +1,434 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puspita Pramanik - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', 'Calibri', sans-serif;
+      font-size: 13px;
+      color: #1a1a1a;
+      background: #f5f5f5;
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 40px 48px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 18px;
+      border-bottom: 2px solid #2c5f9e;
+      padding-bottom: 14px;
+    }
+
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #2c5f9e;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .header .contact-line {
+      font-size: 12.5px;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    .header .contact-line a {
+      color: #2c5f9e;
+      text-decoration: none;
+    }
+
+    .header .links-line {
+      font-size: 11.5px;
+      color: #444;
+      margin-top: 3px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .header .links-line a {
+      color: #2c5f9e;
+      text-decoration: none;
+    }
+
+    /* Section */
+    .section { margin-bottom: 14px; }
+
+    .section-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #2c5f9e;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-bottom: 1px solid #2c5f9e;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    /* Skills */
+    .skill-row {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 4px;
+      align-items: baseline;
+    }
+
+    .skill-label {
+      font-weight: 600;
+      min-width: 200px;
+      color: #1a1a1a;
+      font-size: 12.5px;
+    }
+
+    .skill-value {
+      color: #333;
+      font-size: 12.5px;
+    }
+
+    /* Education */
+    .edu-entry { margin-bottom: 10px; }
+
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .edu-title {
+      font-weight: 600;
+      font-size: 12.5px;
+      color: #1a1a1a;
+    }
+
+    .edu-date {
+      font-size: 12px;
+      color: #555;
+      white-space: nowrap;
+      margin-left: 10px;
+    }
+
+    .edu-institute {
+      font-size: 12px;
+      color: #444;
+      margin-top: 1px;
+    }
+
+    /* SGPA Table */
+    .sgpa-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      font-size: 12px;
+    }
+
+    .sgpa-table th, .sgpa-table td {
+      border: 1px solid #ccc;
+      padding: 4px 10px;
+      text-align: center;
+    }
+
+    .sgpa-table th {
+      background: #eaf0fb;
+      font-weight: 600;
+      color: #2c5f9e;
+    }
+
+    /* Experience */
+    .exp-entry { margin-bottom: 10px; }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .exp-title {
+      font-weight: 700;
+      font-size: 12.5px;
+      color: #1a1a1a;
+    }
+
+    .exp-date {
+      font-size: 12px;
+      color: #555;
+      white-space: nowrap;
+      font-style: italic;
+      margin-left: 10px;
+    }
+
+    .exp-org {
+      font-weight: 600;
+      color: #2c5f9e;
+      font-size: 12px;
+    }
+
+    .exp-desc {
+      margin-top: 3px;
+      font-size: 12px;
+      color: #333;
+    }
+
+    /* Projects */
+    .project-entry { margin-bottom: 8px; }
+
+    .project-title {
+      font-weight: 700;
+      font-size: 12.5px;
+      color: #1a1a1a;
+    }
+
+    .project-bullet {
+      font-size: 12px;
+      color: #333;
+      margin-top: 2px;
+      padding-left: 12px;
+    }
+
+    .project-bullet::before {
+      content: "•  ";
+    }
+
+    /* Achievements */
+    .ach-item {
+      font-size: 12.5px;
+      color: #333;
+      margin-bottom: 3px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .ach-item::before {
+      content: "❖";
+      color: #2c5f9e;
+      font-size: 10px;
+    }
+
+    /* Print Button */
+    .print-bar {
+      max-width: 800px;
+      margin: 0 auto 0;
+      padding: 12px 48px;
+      display: flex;
+      gap: 12px;
+      justify-content: flex-end;
+    }
+
+    .print-btn {
+      background: #2c5f9e;
+      color: white;
+      border: none;
+      padding: 9px 22px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-family: 'Inter', sans-serif;
+      transition: background 0.2s;
+    }
+
+    .print-btn:hover { background: #1a4a80; }
+
+    @media print {
+      body { background: #fff; }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        padding: 28px 36px;
+      }
+      .print-bar { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-bar">
+    <button class="print-btn" onclick="window.print()">
+      🖨️ Print / Save as PDF
+    </button>
+  </div>
+
+  <div class="page">
+
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Puspita Pramanik</h1>
+      <div class="contact-line">
+        <a href="mailto:pramanikpuspita24@gmail.com">pramanikpuspita24@gmail.com</a>
+        &nbsp;|&nbsp; (+91) 7439235147
+      </div>
+      <div class="links-line">
+        <a href="https://www.linkedin.com/in/puspita-pramanik-9a37b8332" target="_blank">
+          🔗 linkedin.com/in/puspita-pramanik-9a37b8332
+        </a>
+        <a href="https://github.com/Puspita2411" target="_blank">
+          🐙 github.com/Puspita2411
+        </a>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+      <div class="section-title">Skills</div>
+      <div class="skill-row">
+        <span class="skill-label">❖ &nbsp;Programming Languages :</span>
+        <span class="skill-value">Java, C, Python, C++</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">❖ &nbsp;Web Development :</span>
+        <span class="skill-value">HTML, CSS, Javascript</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">❖ &nbsp;Database :</span>
+        <span class="skill-value">MySQL, MongoDB</span>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+      <div class="section-title">Education</div>
+
+      <div class="edu-entry">
+        <div class="edu-header">
+          <div>
+            <div class="edu-title">❖ &nbsp;Computer Science and Engineering</div>
+            <div class="edu-institute">Institute of Engineering and Management, Kolkata</div>
+          </div>
+          <div class="edu-date">(2024 – '28)</div>
+        </div>
+        <table class="sgpa-table">
+          <tr>
+            <th>Semester 1 (SGPA)</th>
+            <th>Semester 2 (SGPA)</th>
+            <th>Semester 3 (SGPA)</th>
+            <th>Semester 4 (SGPA)</th>
+          </tr>
+          <tr>
+            <td>9.34</td>
+            <td>9.52</td>
+            <td>8.21</td>
+            <td>9.12</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="edu-entry">
+        <div class="edu-header">
+          <div>
+            <div class="edu-title">❖ &nbsp;XII (WBCHSE)</div>
+            <div class="edu-institute">Rahara Bhabanath Institution For Girls</div>
+          </div>
+          <div class="edu-date">79.6% &nbsp;|&nbsp; 2024</div>
+        </div>
+      </div>
+
+      <div class="edu-entry">
+        <div class="edu-header">
+          <div>
+            <div class="edu-title">❖ &nbsp;X (WBBSE)</div>
+            <div class="edu-institute">Rahara Bhabanath Institution For Girls</div>
+          </div>
+          <div class="edu-date">89.4% &nbsp;|&nbsp; 2022</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+      <div class="section-title">Experience</div>
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <div>
+            <span class="exp-title">❖ &nbsp;Content Creator and Marketing Team Member</span>
+            &nbsp;|&nbsp;
+            <span class="exp-org">Kshitiksha Foundation</span>
+          </div>
+          <div class="exp-date">(May'25 – June'25)</div>
+        </div>
+        <div class="exp-desc">
+          Gained hands-on experience in developing compelling content and executing strategic marketing initiatives to support the mission.
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <div>
+            <span class="exp-title">❖ &nbsp;C Programming Intern</span>
+            &nbsp;|&nbsp;
+            <span class="exp-org">Pinnacle Labs</span>
+          </div>
+          <div class="exp-date">(December'25 – January'26)</div>
+        </div>
+        <div class="exp-desc">
+          Hands-on projects in C programming, which helped to strengthen problem-solving skills, improved logical thinking, and gained practical exposure to core programming concepts.
+        </div>
+      </div>
+    </div>
+
+    <!-- ACADEMIC PROJECTS -->
+    <div class="section">
+      <div class="section-title">Academic Projects</div>
+
+      <div class="project-entry">
+        <div class="project-title">❖ &nbsp;Share Plate – Food Redistribution</div>
+        <div class="project-bullet">Connect restaurants and hostels with nearby NGOs to facilitate the seamless donation of edible food.</div>
+        <div class="project-bullet">Technologies Used: HTML, CSS, JavaScript (Frontend); Node.js, Express, Firebase (Backend); MongoDB Atlas, Firebase Realtime DB (Database); Google Maps API (Location); Firebase Hosting, AWS (Cloud).</div>
+      </div>
+
+      <div class="project-entry">
+        <div class="project-title">❖ &nbsp;PhishGuard AI – AI Phishing URL Detection Tool</div>
+        <div class="project-bullet">AI-based phishing URL detection tool developed to enhance online security.</div>
+        <div class="project-bullet">Technology used: HTML, CSS, Flask, Scikit-learn, Render.</div>
+      </div>
+
+      <div class="project-entry">
+        <div class="project-title">❖ &nbsp;Office Management System</div>
+        <div class="project-bullet">Centralized digital solution for streamlining administrative workflows and employee data coordination.</div>
+      </div>
+
+      <div class="project-entry">
+        <div class="project-title">❖ &nbsp;Medical Store Management System</div>
+        <div class="project-bullet">Optimized pharmaceutical inventory tracking and sales processing for a medical retail environment.</div>
+      </div>
+
+      <div class="project-entry">
+        <div class="project-title">❖ &nbsp;AI Document Summarizer and Schedular</div>
+      </div>
+
+      <div class="project-entry">
+        <div class="project-title">❖ &nbsp;Dr. Appointment Booking System</div>
+      </div>
+    </div>
+
+    <!-- ACHIEVEMENTS / HOBBIES -->
+    <div class="section">
+      <div class="section-title">Achievements / Hobbies</div>
+      <div class="ach-item">Drawing</div>
+      <div class="ach-item">Reading books</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
