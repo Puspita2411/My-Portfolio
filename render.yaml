@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: puspita-portfolio
+    runtime: static
+    buildCommand: ""
+    publishPath: "."
